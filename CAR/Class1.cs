@@ -48,6 +48,9 @@ namespace CAR
                 else if (speed >= 65 & peredacha == 4 & speed <= 80)
                 {
                     changeSpeed(setspeed);
+                } else if (setspeed == "false")
+                {
+                    changeSpeed(setspeed);
                 }
             }
             return speed;
@@ -57,7 +60,7 @@ namespace CAR
             if (change == true)
             {
                 peredacha += 1;
-            } else
+            } else if (peredacha>0)
             {
                 peredacha -= 1;
             }
